@@ -1,6 +1,6 @@
 html {
   font-family: "Fredoka One", sans-serif;
-  background-image: repeating-linear-gradient(-45deg, #b3fbff 32%, #c9fcff 17%, #d4fdff 20%);
+  background-image: repeating-linear-gradient(-35deg, #b3fbff 1%, #c9fcff 2%, #c9fcff 3%);
 }
 
 h1 {
@@ -23,11 +23,13 @@ p {
 }
 
 .btn:hover {
-  opacity: .5;
   border-color: #c09;
   color: #c09;
 }
 
+@keyframes banner-content {
+
+}
 .cherry {
   position: absolute;
   bottom: 72%;
@@ -64,4 +66,14 @@ p {
   bottom: 3%;
   left: 75%;
   animation: forwards;
+}
+
+@keyframes cone {
+  0% {
+    transform: translate(0em);
+  }
+
+  100% {
+    transform: translate(100em);
+  }
 }
