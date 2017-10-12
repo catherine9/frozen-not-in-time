@@ -1,3 +1,67 @@
 html {
   font-family: "Fredoka One", sans-serif;
+  background-image: repeating-linear-gradient(-45deg, #b3fbff 32%, #c9fcff 17%, #d4fdff 20%);
+}
+
+h1 {
+  color: #990073;
+  transform-origin: left center;
+  transform: rotate(-25deg);
+  max-width: 19em;
+}
+
+p {
+  color: #c09;
+  transform-origin: left center;
+  transform: rotate(-25deg);
+  max-width: 19em;
+}
+
+.btn {
+  color: #c09;
+  border-color: #c09;
+}
+
+.btn:hover {
+  opacity: .5;
+  border-color: #c09;
+  color: #c09;
+}
+
+.cherry {
+  position: absolute;
+  bottom: 72%;
+  left: 75%;
+  animation: forwards;
+  z-index: 5;
+}
+
+.vanilla-fudge {
+  position: absolute;
+  bottom: 53%;
+  left: 75%;
+  animation: forwards;
+  z-index: 4;
+}
+
+.chocolate-chip {
+  position: absolute;
+  bottom: 39%;
+  left: 78%;
+  animation: forwards;
+  z-index: 2;
+}
+
+.mint-chip {
+  position: absolute;
+  bottom: 24%;
+  left: 75%;
+  animation: forwards;
+}
+
+.cone {
+  position: absolute;
+  bottom: 3%;
+  left: 75%;
+  animation: forwards;
 }
