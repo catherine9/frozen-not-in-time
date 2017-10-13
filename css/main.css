@@ -15,23 +15,33 @@ html {
 
 h1 {
   color: #990073;
-  transform-origin: left center;
-  transform: rotate(-25deg);
   max-width: 19em;
+  transform-origin: left center;
+  transform: rotate(-8deg);
 }
 
 p {
   color: #c09;
-  transform-origin: left center;
-  transform: rotate(-25deg);
   max-width: 19em;
+  transform-origin: left center;
+  transform: rotate(-5deg);
+}
+
+.btn-ghost {
+  border-color: #990073;
+  color: #c09;
+}
+
+.btn-ghost:hover {
+  text-shadow: 1px 1px rgba(0, 0, 0, .15);
+  color: #c09;
 }
 
 .cherry {
   position: absolute;
   bottom: 72%;
   left: 75%;
-  animation: forwards;
+  animation: 1s 2s linear forwards;
   z-index: 5;
 }
 
@@ -39,7 +49,7 @@ p {
   position: absolute;
   bottom: 53%;
   left: 75%;
-  animation: forwards;
+  animation: 1s 1s linear forwards;
   z-index: 4;
 }
 
@@ -47,7 +57,7 @@ p {
   position: absolute;
   bottom: 39%;
   left: 78%;
-  animation: forwards;
+  animation: 1s 1.5s linear forwards;
   z-index: 2;
 }
 
@@ -55,22 +65,32 @@ p {
   position: absolute;
   bottom: 24%;
   left: 75%;
-  animation: forwards;
+  animation: 1s 1.5 linear forwards;
 }
 
 .cone {
   position: absolute;
   bottom: 3%;
   left: 75%;
-  animation: forwards;
+  animation: 1s 5s linear forwards;
 }
 
-@keyframes cone {
+@keyframes ice-cream {
   0% {
     transform: translate(0em);
   }
 
   100% {
     transform: translate(100em);
+  }
+}
+
+@keyframes banner-content {
+  0% {
+    filter:blur(1px);
+  }
+
+  100% {
+    filter:blur(300px);
   }
 }
