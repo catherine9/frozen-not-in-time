@@ -1,6 +1,7 @@
 html {
   font-family: "Fredoka One", sans-serif;
   background-image: repeating-linear-gradient(-35deg, #b3fbff 1%, #c9fcff 2%, #d4fdff 3%);
+  border-top: 10px solid #b3fbff;
 }
 
 .btn {
@@ -87,10 +88,12 @@ p {
 
 @keyframes banner-content {
   0% {
-    filter:blur(1px);
+    opacity: 0;
+    filter: blur(7px);
   }
 
   100% {
-    filter:blur(300px);
+    opacity: 1;
+    filter: blur(0);
   }
 }
