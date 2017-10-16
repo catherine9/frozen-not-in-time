@@ -1,7 +1,11 @@
 html {
   font-family: "Fredoka One", sans-serif;
+}
+
+.banner {
   background-image: repeating-linear-gradient(-35deg, #b3fbff 1%, #c9fcff 2%, #d4fdff 3%);
   border-top: 10px solid #b3fbff;
+  min-height: 485px;
 }
 
 .btn {
@@ -17,8 +21,9 @@ html {
 h1 {
   color: #990073;
   max-width: 19em;
-  transform-origin: left center;
-  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  transform: rotate(-10deg);
+  text-shadow: 1px 1px rgba(150, 150, 150, .3);
 }
 
 p {
@@ -26,6 +31,12 @@ p {
   max-width: 19em;
   transform-origin: left center;
   transform: rotate(-5deg);
+  text-shadow: 1px 1px rgba(150, 150, 150, .3);
+}
+
+.ice-cream {
+  min-height: 485px;
+  transform: scale(.7);
 }
 
 .btn-ghost {
@@ -38,62 +49,96 @@ p {
   color: #c09;
 }
 
-.cherry {
-  position: absolute;
-  bottom: 72%;
-  left: 75%;
-  animation: 1s 2s linear forwards;
-  z-index: 5;
-}
-
-.vanilla-fudge {
-  position: absolute;
-  bottom: 53%;
-  left: 75%;
-  animation: 1s 1s linear forwards;
-  z-index: 4;
-}
-
-.chocolate-chip {
-  position: absolute;
-  bottom: 39%;
-  left: 78%;
-  animation: 1s 1.5s linear forwards;
+.cone {
   z-index: 2;
+  bottom: 130%;
+  animation: drop-cone 1s 5s linear forwards;
 }
 
 .mint-chip {
-  position: absolute;
   bottom: 24%;
   left: 75%;
-  animation: 1s 1.5 linear forwards;
+  animation: drop-mint 1s 1.5 linear forwards;
 }
 
-.cone {
-  position: absolute;
-  bottom: 3%;
+.chocolate-chip {
+  bottom: 39%;
+  animation: drop-chocolate 1s 1.5s linear forwards;
+  z-index: 3;
+}
+
+.vanilla-fudge {
+  bottom: 53%;
+  animation: drop-vanilla 1s 1s linear forwards;
+  z-index: 4;
+}
+
+.cherry {
+  bottom: 72%;
   left: 75%;
-  animation: 1s 5s linear forwards;
+  animation: drop-cherry 1s 2s linear forwards;
+  z-index: 5;
 }
 
-@keyframes ice-cream {
-  0% {
-    transform: translate(0em);
+@keyframes drop-cone {
+  from {
+    bottom: 120%;
   }
 
-  100% {
-    transform: translate(100em);
+  to {
+    bottom: -77px;
   }
 }
 
-@keyframes banner-content {
-  0% {
+@keyframes drop-mint {
+  from {
+    bottom: 120%;
+  }
+
+  to {
+    bottom: 70px;
+  }
+}
+
+@keyframes drop-chocolate {
+  from {
+    bottom: 120%;
+  }
+
+  to {
+    bottom: 190px;
+  }
+}
+
+@keyframes drop-vanilla {
+  from {
+    bottom: 290%;
+  }
+
+  to {
+    bottom: 292px;
+  }
+}
+
+@keyframes drop-cherry {
+  from {
+    bottom: 120%;
+  }
+
+  to {
+    bottom: 410px;
+  }
+}
+
+@keyframes show-content {
+  from {
     opacity: 0;
-    filter: blur(7px);
+    filter: blur(15px);
   }
 
-  100% {
+  to {
     opacity: 1;
     filter: blur(0);
   }
+
 }
