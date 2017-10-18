@@ -8,12 +8,14 @@ html {
   min-height: 485px;
 }
 
-.btn {
+.btn-ghost {
   color: #c09;
   border-color: #c09;
+  float: left;
+  margin-left: 3rem;
 }
 
-.btn:hover {
+.btn-ghost:hover {
   border-color: #c09;
   color: #c09;
 }
@@ -24,6 +26,7 @@ h1 {
   transform-origin: left bottom;
   transform: rotate(-10deg);
   text-shadow: 1px 1px rgba(150, 150, 150, .3);
+  padding: 5rem 20rem 0 0;
 }
 
 p {
@@ -37,50 +40,46 @@ p {
 .ice-cream {
   min-height: 485px;
   transform: scale(.7);
-}
-
-.btn-ghost {
-  border-color: #990073;
-  color: #c09;
-}
-
-.btn-ghost:hover {
-  text-shadow: 1px 1px rgba(0, 0, 0, .15);
-  color: #c09;
+  text-align: right;
+  margin: 0 0 0 24rem;
 }
 
 .cone {
-  z-index: 2;
-  bottom: 130%;
-  animation: drop-cone 1s 5s linear forwards;
+  z-index: 11;
+  bottom: -1200px;
+  animation: drop-cone 300ms 5s linear forwards;
+  position: absolute;
 }
 
 .mint-chip {
   bottom: 24%;
-  left: 75%;
   animation: drop-mint 1s 1.5 linear forwards;
+  position: absolute;
 }
 
 .chocolate-chip {
   bottom: 39%;
   animation: drop-chocolate 1s 1.5s linear forwards;
   z-index: 3;
+  position: absolute;
 }
 
 .vanilla-fudge {
   bottom: 53%;
   animation: drop-vanilla 1s 1s linear forwards;
   z-index: 4;
+  position: absolute;
 }
 
 .cherry {
   bottom: 72%;
-  left: 75%;
   animation: drop-cherry 1s 2s linear forwards;
   z-index: 5;
+  position: absolute;
 }
 
 @keyframes drop-cone {
+
   from {
     bottom: 120%;
   }
@@ -91,6 +90,7 @@ p {
 }
 
 @keyframes drop-mint {
+
   from {
     bottom: 120%;
   }
@@ -101,6 +101,7 @@ p {
 }
 
 @keyframes drop-chocolate {
+
   from {
     bottom: 120%;
   }
@@ -111,6 +112,7 @@ p {
 }
 
 @keyframes drop-vanilla {
+
   from {
     bottom: 290%;
   }
@@ -121,6 +123,7 @@ p {
 }
 
 @keyframes drop-cherry {
+
   from {
     bottom: 120%;
   }
@@ -131,6 +134,7 @@ p {
 }
 
 @keyframes show-content {
+
   from {
     opacity: 0;
     filter: blur(15px);
