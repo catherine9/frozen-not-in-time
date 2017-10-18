@@ -44,37 +44,37 @@ p {
   margin: 0 0 0 24rem;
 }
 
-.cone {
-  z-index: 11;
-  bottom: -1200px;
-  animation: drop-cone 300ms 5s linear forwards;
-  position: absolute;
-}
-
-.mint-chip {
-  bottom: 24%;
-  animation: drop-mint 1s 1.5 linear forwards;
-  position: absolute;
-}
-
-.chocolate-chip {
-  bottom: 39%;
-  animation: drop-chocolate 1s 1.5s linear forwards;
-  z-index: 3;
+.cherry {
+  bottom: 72%;
+  animation: drop-cherry 500ms linear forwards;
+  z-index: 5;
   position: absolute;
 }
 
 .vanilla-fudge {
   bottom: 53%;
-  animation: drop-vanilla 1s 1s linear forwards;
+  animation: drop-vanilla 600ms linear forwards;
   z-index: 4;
   position: absolute;
 }
 
-.cherry {
-  bottom: 72%;
-  animation: drop-cherry 1s 2s linear forwards;
-  z-index: 5;
+.chocolate-chip {
+  bottom: 39%;
+  animation: drop-chocolate 500ms linear forwards;
+  z-index: 3;
+  position: absolute;
+}
+
+.mint-chip {
+  bottom: 26%;
+  animation: drop-mint 400ms linear forwards;
+  position: absolute;
+}
+
+.cone {
+  z-index: 11;
+  bottom: -1200px;
+  animation: drop-cone 300ms linear forwards;
   position: absolute;
 }
 
@@ -129,11 +129,11 @@ p {
   }
 
   to {
-    bottom: 410px;
+    bottom: 430px;
   }
 }
 
-@keyframes show-content {
+@keyframes blur {
 
   from {
     opacity: 0;
