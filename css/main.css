@@ -27,11 +27,12 @@ h1 {
   transform: rotate(-10deg);
   text-shadow: 1px 1px rgba(150, 150, 150, .3);
   padding: 5rem 25rem 0 0;
+  margin: 0;
 }
 
 p {
   color: #c09;
-  max-width: 19em;
+  max-width: 18em;
   transform-origin: left center;
   transform: rotate(-5deg);
   text-shadow: 1px 1px rgba(150, 150, 150, .3);
@@ -40,12 +41,12 @@ p {
 .ice-cream {
   min-height: 485px;
   transform: scale(.7);
+  margin: 0 0 0 26rem;
   text-align: right;
-  margin: 0 0 0 24rem;
 }
 
 .cherry {
-  bottom: 72%;
+  bottom: 78%;
   animation: drop-cherry 1000ms linear forwards;
   z-index: 6;
   position: absolute;
@@ -59,10 +60,11 @@ p {
 }
 
 .chocolate-chip {
-  bottom: 39%;
+  bottom: 50%;
   animation: drop-chocolate 200ms linear forwards;
   z-index: 3;
   position: absolute;
+  margin-left: 1em;
 }
 
 .mint-chip {
@@ -143,6 +145,22 @@ p {
   to {
     opacity: 1;
     filter: blur(0);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .ice-cream {
+    margin-left: 22rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .ice-cream {
+    margin-left: 24rem;
   }
 
 }
